@@ -199,10 +199,10 @@ export class DockPanel extends React.PureComponent {
             }
         };
         this.onPanelClicked = (e) => {
-            const target = e.nativeEvent.target;
-            if (!this._ref.contains(this._ref.ownerDocument.activeElement) && target instanceof Node && this._ref.contains(target)) {
-                this._ref.querySelector('.dock-bar').focus();
-            }
+            // const target = e.nativeEvent.target;
+            // if (!this._ref.contains(this._ref.ownerDocument.activeElement) && target instanceof Node && this._ref.contains(target)) {
+            //   (this._ref.querySelector('.dock-bar') as HTMLElement).focus();
+            // }
         };
         this._unmounted = false;
     }
